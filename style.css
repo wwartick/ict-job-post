@@ -3,3 +3,129 @@
     margin: 0;
     font-family: "Roboto", sans-serif;
 }
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(110deg, #65B891 0%, #65B891 50%, #00241B 50%, #00241B 100% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    background-color: white;
+    border-radius: 5px;
+    width: 450px;
+    padding: 1.5rem;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.267);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.top-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-description{
+    margin-left: -4rem;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    color: #00241B;
+
+    >ion-icon{
+        font-size: 1rem;
+    }
+
+    >span{
+        display: flex;
+        align-items: center;
+        gap: .35rem;
+        font-size: .85rem;
+        opacity: .55;
+
+        >ion-icon{
+            font-size: 1rem;
+        }
+    }
+    
+}
+
+.button-container{
+    margin-top: .75rem;
+}
+
+button{
+    width: 85px;
+    height: 30px;
+    border: 1px solid #00241B;
+    border-radius: 3px;
+    font-weight: 600;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#save{
+    background-color: white;
+}
+
+#apply{
+    background-color: #00241B;
+    color: white;
+}
+
+img{
+    aspect-ratio: 1;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.473);
+    height: 60px;
+}
+
+#ellipses{
+    font-size: 1.25rem;
+    margin-top: -.5rem;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.bottom-container{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.226);
+    font-size: .85rem;
+    border-radius: 5px;
+    border: 1px solid #00241ba2;
+    padding: 1rem;
+    >*{
+        width: 33%;
+    }
+}
+
+.job-category{
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.bottom-container > .job-category:nth-of-type(3){
+    opacity: .65;
+    padding-left: 15px;
+}
+
+#job-span{
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 700;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
